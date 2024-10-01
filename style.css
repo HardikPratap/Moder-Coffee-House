@@ -12,8 +12,8 @@
     --text-color:#fff;
     --main-color:#ae8957;
 
-    --big-font:110px;
-    --p-font:16px;
+    --big-font:50px;
+    --p-font:10px;
 
 }
 
@@ -27,7 +27,7 @@ body{
 .head-container{
     display: flex;
     justify-content: space-between;
-    padding: 35px 7%;
+    padding: 20px 7%;
     align-items: center;
     z-index: 100;
     transition: all .50s ease;
@@ -37,7 +37,7 @@ body{
 }
 
 .logo img{ 
-    width: 100%;
+    width: 50%;
     height: auto;
 
 }
@@ -72,8 +72,8 @@ body{
     border-radius: 7px;
     background-color: transparent;
     transition: all .6s ease;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .nav-btn:hover{
@@ -102,7 +102,7 @@ section{
     background-size: cover;
     display: flex;
     align-items: center;
-    z-index: 100;
+    /* z-index: 100; */
 
 }
 
@@ -112,8 +112,8 @@ section{
 }
 .brew-img{
     flex-grow: 1;
-    width: 40%;
-    height: 70%;
+  width: 40%;
+  height: auto;
 }
 
 .text h1{
@@ -143,10 +143,16 @@ section{
 .bottom-text .order-btn{
     padding: 10px 30px ;
     border: 2px solid;
+    border-radius: 7px;
     border-color: var(--text-color);
     color: var(--text-color);
     background-color: var(--main-color);
     margin-right: 30px;
+    transition: all .6s ease;
+}
+
+.bottom-text .order-btn:hover{
+    transform: scale(1.1);
 }
 
 .bottom-text .price{
@@ -159,7 +165,28 @@ section{
     color: var(--main-color);
     font-size: 15px;
     align-items: center;
+    margin-left: 10px;
 }
+.icons{
+    top: 60%;
+    position: absolute;
+    padding: 0 5%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: block;
+    color: var(--text-color);
+    font-size: 24px;
+    margin: 30px;
+    transition: all .6s;
+}
+
+.icons i:hover{
+    transform: translateY(-5px);
+    color: var(--main-color);
+}
+
 
 .icons {
     top: 60%;
