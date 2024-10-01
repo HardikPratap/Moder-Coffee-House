@@ -114,6 +114,10 @@ section{
     flex-grow: 1;
   width: 40%;
   height: auto;
+  transition: all .6 ease-out;
+}
+.brew-img img{
+    width: 80%;
 }
 
 .text h1{
