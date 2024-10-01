@@ -19,6 +19,8 @@
 
 body{
     background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    
     color: var(--text-color)
 }
 
@@ -29,6 +31,9 @@ body{
     align-items: center;
     z-index: 100;
     transition: all .50s ease;
+    background: url(./bg.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .logo img{ 
@@ -82,5 +87,77 @@ body{
     z-index: 101;
     cursor: pointer;
     margin-left: 25px;
+    display: none;
 }
- 
+section{
+    padding: 0 14%;
+}
+
+.main{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: url(./bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+
+}
+
+
+.text{
+    flex-grow: 2;
+}
+.brew-img{
+    flex-grow: 1;
+    width: 40%;
+    height: 70%;
+}
+
+.text h1{
+    font-size: var(--big-font);
+    font-weight: 900;
+    margin: 15px 0;
+}
+.text .top-text{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+
+.text p{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    max-width: 620px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.bottom-text{
+    display: flex;
+    align-items: center;
+}
+
+.bottom-text .order-btn{
+    padding: 10px 30px ;
+    border: 2px solid;
+    border-color: var(--text-color);
+    color: var(--text-color);
+    background-color: var(--main-color);
+    margin-right: 30px;
+}
+
+.bottom-text .price{
+    color: var(--text-color);
+    font-size: 25px;
+
+}
+
+.bottom-text .price span{
+    color: var(--main-color);
+    font-size: 15px;
+    align-items: center;
+}
+
