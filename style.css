@@ -44,6 +44,7 @@ body{
 
 .list{
     display: flex;
+    /* z-index: 101; */
 
 }
 
@@ -191,7 +192,13 @@ section{
     color: var(--main-color);
 }
 
+/* Large Desktops */
+@media (max-width: 1770px) {
+    .head-container {
+        padding: 22px 4%;
+    }
 
+<<<<<<< HEAD
 .icons {
     top: 60%;
     position: absolute;
@@ -220,6 +227,8 @@ section{
         padding: 22px 4%;
     }
 
+=======
+>>>>>>> b1b09b7 (done respnsiveness)
     .icons {
         padding: 0 4%;
     }
@@ -325,4 +334,8 @@ section{
     .bottom-text .price span {
         font-size: 12px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b1b09b7 (done respnsiveness)
